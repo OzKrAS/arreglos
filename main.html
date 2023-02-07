@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+
+        <h1 v-text="message"></h1>
+
+        <input v-model.number="n1" type="text" placeholder="Ingrese numero">
+        <input v-model.number="n2" type="text" placeholder="Ingrese numero 2">
+        <button @click="funcionPrueba">Procesar</button>
+
+        <h1 v-for="item in frutas">{{item.name}}</h1>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="demo.js"></script>
+
+</html>
